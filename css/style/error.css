@@ -1,0 +1,64 @@
+.page-cont .search-cont {
+    width: 238px;
+}
+
+.error-num {
+    color: #eee;
+    display: block;
+    font-size: 300px;
+    font-family: black;
+    line-height: .7;
+    text-align: left;
+    margin-left: -30px;
+}
+
+html[lang=en-US] .error-num {
+    margin-left: 0;
+    text-align: right;
+    margin-right: -30px;
+}
+
+.search-form {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.text-medium {
+    font-size: 50px;
+    font-family: black;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 18px;
+    color: #777;
+}
+
+.reload {
+    font-family: var(--font-med);
+    border-radius: 25px;
+    font-size: 16px;
+    text-decoration: none;
+    outline: none;
+    padding: 12px 18px;
+    position: relative;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    border-width: 1px;
+    border-style: solid;
+    color: #fff;
+    transition: all .3s;
+    margin-bottom: 6px;
+    outline: none;
+    line-height: 14px;
+    cursor: pointer;
+}
+
+.reload:hover {
+    background-color: transparent;
+    color: var(--main-color);
+}

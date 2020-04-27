@@ -1,0 +1,94 @@
+.clients-head {
+    font-family: var(--font-med);
+    color: var(--sec-color);
+    font-size: 22px;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto 50px;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.clients .client {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    border-left: 1px solid #eee;
+    cursor: pointer;
+}
+
+html[lang=en-us] .clients .client {
+    border-left: none;
+    border-right: 1px solid #eee;
+}
+
+.clients .client:nth-of-type(4n) {
+    border-left: none;
+}
+
+html[lang=en-us] .clients .client:nth-of-type(4n) {
+    border-left: none;
+    border-right: none;
+}
+
+.clients .client:nth-of-type(n + 5) {
+    border-top: 1px solid #eee;
+}
+
+.clients .client img {
+    opacity: 0.6;
+    filter: grayscale(100%);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.clients .client:hover img {
+    opacity: 1;
+    filter: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .clients-head {
+        width: 100%;
+    }
+
+    .clients .client {
+        width: 50%;
+    }
+
+    .clients .client:nth-of-type(4n) {
+        border-left: 1px solid #eee;
+    }
+
+    html[lang=en-US] .clients .client:nth-of-type(4n) {
+        border-left: none;
+        border-right: 1px solid #eee;
+    }
+
+    .clients .client:nth-of-type(2n) {
+        border-left: none;
+    }
+
+    html[lang=en-US] .clients .client:nth-of-type(2n) {
+        border-left: none;
+        border-right: none;
+    }
+
+    .clients .client:nth-of-type(n + 5) {
+        border-top: none;
+    }
+
+    .clients .client:nth-of-type(n + 3) {
+        border-top: 1px solid #eee;
+    }
+}

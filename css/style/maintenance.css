@@ -1,0 +1,59 @@
+.maintenance-page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.maintenance-sign {
+    color: #ffd530;
+}
+
+.maintenance-head {
+    font-size: 90px;
+    line-height: 100px;
+    letter-spacing: -0.02em;
+    font-family: var(--font-bold);
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.maintenance-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777;
+}
+
+.maintenance-progress {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.prog-head {
+    font-size: 14px;
+    font-family: var(--font-bold);
+}
+
+.maintenance-progress .progress {
+    border-radius: 0;
+    background-color: #eee;
+    height: 10px;
+}
+
+.maintenance-progress .progress .progress-bar {
+    border-radius: 0;
+    background-color: #ffd530;
+    width: 0%;
+}
+
+@media (max-width: 576px) {
+    .maintenance-head {
+        font-size: 50px;
+    }
+
+    .prog-head {
+        margin: 0 15px;
+    }
+}
