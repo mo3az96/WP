@@ -62,3 +62,25 @@ html[lang=en-US] .error-num {
     background-color: transparent;
     color: var(--main-color);
 }
+
+@media (max-width: 768px) {
+    .error-num {
+        font-size: 190px;
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+
+    html[lang=en-US] .error-num {
+        text-align: center;
+        margin: 0 auto 40px;
+    }
+
+    .text-medium {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .lead {
+        text-align: center;
+    }
+}
