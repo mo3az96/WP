@@ -41,7 +41,7 @@ html[lang=en-us] .clients .client:nth-of-type(4n) {
     border-top: 1px solid #eee;
 }
 
-.clients .client img {
+.client img {
     opacity: 0.6;
     filter: grayscale(100%);
     -moz-transition: all 0.3s ease-in-out;
@@ -50,7 +50,7 @@ html[lang=en-us] .clients .client:nth-of-type(4n) {
     transition: all 0.3s ease-in-out;
 }
 
-.clients .client:hover img {
+.client:hover img {
     opacity: 1;
     filter: none;
 }

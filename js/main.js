@@ -56,4 +56,32 @@ $(document).ready(function () {
     }
 
     setInterval(function () { makeTimer(); }, 1000);
+
+    /////////////////////////////////////////////
+    var clientswiper = new Swiper('.client-slider .swiper-container', {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.client-slider .swiper-button-next',
+            prevEl: '.client-slider .swiper-button-prev',
+        },
+        pagination: {
+            el: '.client-slider .swiper-pagination',
+            clickable: true
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+            },
+            500: {
+                slidesPerView: 3,
+            },
+            767: {
+                slidesPerView: 4,
+            },
+            991: {
+                slidesPerView: 5,
+            },
+        },
+    });
 });

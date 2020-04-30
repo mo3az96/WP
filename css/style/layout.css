@@ -988,14 +988,14 @@ html[lang=en-US] .newsletter-btn:after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 237px;
+    height: 180px;
 }
 
 @media (max-width: 767px) {
     .breadcrumb-sec {
         background-attachment: unset;
         background-position: top center;
-        height: 160px;
+        height: 100px;
     }
 }
 
@@ -1003,7 +1003,7 @@ html[lang=en-US] .newsletter-btn:after {
     font-size: 36px;
     color: #fff;
     font-family: var(--font-bold);
-    margin-bottom: 9px;
+    margin-bottom: 15px;
     position: relative;
 }
 
@@ -1013,6 +1013,7 @@ ol.breadcrumb {
     border-radius: 0;
     position: relative;
     margin: 0;
+    padding: 0;
 }
 
 ol.breadcrumb li {
@@ -1041,4 +1042,14 @@ ol.breadcrumb li a {
 
 ol.breadcrumb li a:hover {
     color: var(--sec-color);
+}
+
+@media (max-width: 768px) {
+    .breadcrumb-sec .page-head {
+        font-size: 30px;
+    }
+
+    .breadcrumb-sec ol.breadcrumb {
+        padding: 0;
+    }
 }

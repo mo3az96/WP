@@ -93,3 +93,39 @@ html {
         max-width: 1170px;
     }
 }
+
+.page-title {
+    font-size: 32px;
+    text-align: center;
+    font-family: var(--font-bold);
+    color: var(--sec-color);
+    margin-bottom: 25px;
+}
+
+.page-title:after {
+    display: block;
+    content: "";
+    width: 90px;
+    height: 2px;
+    background-color: var(--main-color);
+    margin: 7px auto 0;
+}
+
+.page-subtitle {
+    font-size: 20px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 25px;
+    }
+
+    .page-subtitle {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+}
