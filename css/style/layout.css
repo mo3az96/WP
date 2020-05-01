@@ -215,6 +215,10 @@ span.top-link:focus {
     display: flex;
 }
 
+.logo {
+    width: 195px;
+    display: block;
+}
 
 .sec-div .sec-link {
     margin-right: 1px;
@@ -1051,5 +1055,10 @@ ol.breadcrumb li a:hover {
 
     .breadcrumb-sec ol.breadcrumb {
         padding: 0;
+    }
+
+    .logo {
+        width: 150px;
+        display: block;
     }
 }

@@ -87,11 +87,9 @@
 }
 
 .more-cont {
-    text-align: left;
-}
-
-html[lang=en-US] .more-cont {
-    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .more-anchor {

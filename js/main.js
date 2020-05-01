@@ -84,4 +84,20 @@ $(document).ready(function () {
             },
         },
     });
+    ////////////////////////////
+    $('.faq-q').click(function () {
+        var x = $(this).siblings().prop('scrollHeight') + 12 + "px";
+        $(".faq-q").not(this).removeClass("active");
+        $(this).toggleClass("active");
+        if ($(this).siblings().css('max-height') == '0px') {
+            $(this).siblings().css('max-height', x);
+            $(this).siblings().css('padding-top', "15px");
+        } else {
+            $(this).siblings().css('max-height', '0');
+            $(this).siblings().css('padding-top', "0");
+        }
+
+        $(".faq-q").not(this).siblings().css('max-height', '0');
+        $(".faq-q").not(this).siblings().css('padding-top', "0");
+    })
 });
