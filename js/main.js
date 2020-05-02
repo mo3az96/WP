@@ -107,4 +107,16 @@ $(document).ready(function () {
             $(".file-val").html(file.name)
         }
     });
+    ////////////////////////////////////////////////////////
+    $(".modal-open").click(function () {
+        $(".form-modal-cont").fadeIn(200)
+        $(".form-modal").addClass("active")
+    });
+    $(".form-modal-cont").click(function () {
+        $(".form-modal-cont").fadeOut(400)
+        $(".form-modal").removeClass("active")
+    });
+    $(".form-modal").click(function (e) {
+        e.stopPropagation()
+    });
 });

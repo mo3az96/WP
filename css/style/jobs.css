@@ -21,10 +21,6 @@ html[lang=en-US] .safe-hint {
 
 .safe-hint::before {
     display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 26px;
@@ -303,4 +299,172 @@ html[lang=en-US] .bootstrap-select:not([class*=col-]):not([class*=form-control])
     background-color: var(--main-color);
     color: #fff;
     cursor: pointer;
+}
+
+/*////////////////////*/
+.other-title {
+    font-size: 16.44px;
+    color: var(--sec-color);
+    font-family: var(--font-bold);
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+
+.single-job-head {
+    color: var(--sec-color);
+    font-family: var(--font-bold);
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.single-job-desc {
+    padding-left: 30px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    color: var(--text-color);
+}
+
+html[lang="en-US"] .single-job-desc {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.modal-open {
+    border-radius: var(--raduis);
+    background-color: var(--main-color);
+    line-height: 43px;
+    text-align: center;
+    color: #fff;
+    width: 199px;
+    font-family: var(--font-bold);
+    height: 43px;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.modal-open:hover {
+    background-color: var(--sec-color);
+}
+
+.job-section {
+    padding: 28px 0;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.job-section:last-of-type {
+    border-bottom: none;
+}
+
+.desc-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.desc-head {
+    color: var(--sec-color);
+    font-size: 16px;
+    font-family: var(--font-bold);
+    width: 140px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.desc-item .desc-head {
+    margin-bottom: 0;
+}
+
+.desc-p {
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+p.desc-item {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+p.desc-item:before {
+    width: 18px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 6px;
+    content: "\f111";
+    /* margin-top: 10px; */
+}
+
+
+
+
+.form-modal-cont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    overflow-y: auto;
+    display: none;
+}
+
+.form-modal-cont::-webkit-scrollbar {
+    background-color: #fff;
+    width: 7px;
+    height: 0px;
+}
+
+.form-modal-cont::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
+
+.form-modal-cont {
+    scrollbar-width: thin;
+    scrollbar-color: var(--main-color) #fff;
+}
+
+.form-modal {
+    background-color: #fff;
+    width: 600px;
+    margin: 30px auto;
+    padding: 40px;
+    transition: 0.4s;
+    transform: translateY(-50px);
+}
+
+.form-modal.active {
+    transform: translateY(0);
+}
+
+.modal-head {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    p.desc-item {
+        align-items: flex-start;
+    }
+
+    p.desc-item:before {
+        margin-top: 10px;
+    }
+
+    .form-modal-cont {
+        padding: 0 15px;
+    }
+
+    .form-modal {
+        width: 100%;
+        padding: 40px 15px;
+    }
+
 }
