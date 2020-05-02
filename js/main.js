@@ -100,4 +100,11 @@ $(document).ready(function () {
         $(".faq-q").not(this).siblings().css('max-height', '0');
         $(".faq-q").not(this).siblings().css('padding-top', "0");
     })
+    /////////////////////////////////////////
+    $(".inputfile").change(function () {
+        var file = $('.inputfile')[0].files[0]
+        if (file) {
+            $(".file-val").html(file.name)
+        }
+    });
 });

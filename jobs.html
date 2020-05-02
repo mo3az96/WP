@@ -119,21 +119,110 @@
         </div>
     </header>
     <!-- end header -->
+    <!-- start breadcrumb -->
+    <div class="breadcrumb-sec text-center">
+        <h2 class="page-head fixall">الوظائف</h2>
+        <ol class="breadcrumb">
+            <li><a href="#!" class="fixall">الرئيسية</a></li>
+            <li class="active">الوظائف</a></li>
+        </ol>
+    </div>
+    <!-- end breadcrumb -->
+
     <!-- start page-content -->
     <div class="page-cont">
         <div class="container">
+            <h2 class="safe-hint fixall">جميع البيانات الخاصة بك آمنة ومأمونة معنا! سيتم تشفيرها تلقائيًا. لن نشارك
+                بيانات
+                الاتصال الخاصة بك أو نستأنفها مع أي شخص.</h2>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="error-num">500</div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="error-desc">
-                        <h1 class="text-medium">خطأ في الخادم!</h1>
-                        <p class="lead">عذرًا ، هناك خطأ ما على الخادم الخاص بنا. </p>
-                        <div class="search-form">
-                            <button onclick="window.location.reload()" class="reload fixall">إعادة تحميل</button>
+                <div class="col-md-8">
+                    <div class="jobs-list">
+                        <h3 class="jobs-head fixall">قائمة الوظائف</h3>
+                        <div class="job-announce">
+                            <a href="job.html" class="arc-job-name fixall">وظيفة 1</a>
+                            <p class="arc-job-desc fixall">
+                                أبجد هوز هو مجرد دمية النص لصناعة الطباعة والتنضيد. كان هو النص الوهمي القياسي في هذه
+                                الصناعة منذ القرن الخامس عشر الميلادي ، عندما أخذت طابعة غير معروفة لو ...
+                            </p>
+                            <div class="more-cont">
+                                <a href="job.html" class="more-anchor fixall">قراءة المزيد</a>
+                            </div>
+                        </div>
+                        <div class="job-announce">
+                            <a href="job.html" class="arc-job-name fixall">وظيفة 2</a>
+                            <p class="arc-job-desc fixall">
+                                أبجد هوز هو مجرد دمية النص لصناعة الطباعة والتنضيد. كان هو النص الوهمي القياسي في هذه
+                                الصناعة منذ القرن الخامس عشر الميلادي ، عندما أخذت طابعة غير معروفة لو ...
+                            </p>
+                            <div class="more-cont">
+                                <a href="job.html" class="more-anchor fixall">قراءة المزيد</a>
+                            </div>
+                        </div>
+                        <div class="job-announce">
+                            <a href="job.html" class="arc-job-name fixall">وظيفة 3</a>
+                            <p class="arc-job-desc fixall">
+                                أبجد هوز هو مجرد دمية النص لصناعة الطباعة والتنضيد. كان هو النص الوهمي القياسي في هذه
+                                الصناعة منذ القرن الخامس عشر الميلادي ، عندما أخذت طابعة غير معروفة لو ...
+                            </p>
+                            <div class="more-cont">
+                                <a href="job.html" class="more-anchor fixall">قراءة المزيد</a>
+                            </div>
+                        </div>
+                        <div class="job-announce">
+                            <a href="job.html" class="arc-job-name fixall">وظيفة 4</a>
+                            <p class="arc-job-desc fixall">
+                                أبجد هوز هو مجرد دمية النص لصناعة الطباعة والتنضيد. كان هو النص الوهمي القياسي في هذه
+                                الصناعة منذ القرن الخامس عشر الميلادي ، عندما أخذت طابعة غير معروفة لو ...
+                            </p>
+                            <div class="more-cont">
+                                <a href="job.html" class="more-anchor fixall">قراءة المزيد</a>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="jobs-head fixall">طلب وظيفة</h3>
+                    <form class="job-form">
+                        <span class="req-hint">(*) مطلوبة</span>
+                        <div class="label-input req">
+                            <span class="job-label">الاسم الكامل</span>
+                            <input type="text" class="job-input fixall">
+                        </div>
+                        <div class="label-input req">
+                            <span class="job-label">الهاتف </span>
+                            <input type="tel" class="job-input fixall">
+                        </div>
+                        <div class="label-input req">
+                            <span class="job-label">البريد الالكتروني</span>
+                            <input type="email" class="job-input fixall">
+                        </div>
+                        <div class="label-input req">
+                            <span class="job-label">الوظيفة </span>
+                            <div class="select-cont">
+                                <select class="selectpicker">
+                                    <option value="1">وظيفة 1</option>
+                                    <option value="2">وظيفة 2</option>
+                                    <option value="3">وظيفة 3</option>
+                                    <option value="4">وظيفة 4</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="label-input req">
+                            <span class="job-label">المسمى الوظيفي</span>
+                            <input type="text" class="job-input fixall">
+                        </div>
+                        <div class="label-input req">
+                            <span class="job-label">السيرة الذاتية</span>
+                            <div class="upload-btn-wrapper">
+                                <span class="file-val"></span>
+                                <input type="file" name="myfile" class="inputfile" />
+                                <span class="btn">تحميل ملف</span>
+                            </div>
+
+                        </div>
+                        <button type="submit" class="submit-form fixall">ارسال</button>
+                    </form>
                 </div>
             </div>
         </div>

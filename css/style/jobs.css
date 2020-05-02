@@ -1,0 +1,306 @@
+.safe-hint {
+    border: 1px solid #ace4c9;
+    background-color: #e8fff4;
+    color: var(--sec-color);
+    font-size: 16px;
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 22px;
+    padding-right: 65px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+html[lang=en-US] .safe-hint {
+    padding: 22px;
+    padding-left: 65px;
+}
+
+
+.safe-hint::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 26px;
+    color: var(--main-color);
+    content: "\f3ed";
+    position: absolute;
+    top: 13px;
+    right: 29px;
+}
+
+html[lang=en-US] .safe-hint::before {
+    right: unset;
+    left: 29px;
+}
+
+.jobs-head {
+    color: var(--sec-color);
+    font-size: 22px;
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+.job-announce {
+    padding: 25px 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.job-announce:last-of-type {
+    border-bottom: none;
+}
+
+.arc-job-name {
+    font-family: var(--font-med);
+    font-size: 18px;
+    color: var(--sec-color);
+    transition: 0.3s;
+}
+
+.arc-job-name:hover,
+.arc-job-name:focus {
+    color: var(--main-color);
+}
+
+.arc-job-desc {
+    font-size: 14px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.job-announce .more-cont {
+    justify-content: flex-start;
+}
+
+.req-hint {
+    font-size: 14px;
+    color: #ff0000;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.label-input {
+    margin-bottom: 20px;
+}
+
+.label-input .job-label {
+    color: var(--text-color);
+    font-size: 15px;
+    display: block;
+    margin-bottom: 8px;
+    padding: 0 10px;
+}
+
+.label-input.req .job-label:after {
+    content: "*";
+    color: #ff0000;
+}
+
+.job-input {
+    height: 53px;
+    width: 100%;
+    border-radius: var(--raduis);
+    border: 1px solid #e4e6eb;
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: right;
+    padding: 0 27px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+html[lang=en-US] .job-input {
+    text-align: left;
+}
+
+.job-input:focus {
+    border-color: var(--main-color);
+}
+
+.submit-form {
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid var(--main-color);
+    border-radius: var(--raduis);
+    background-color: var(--main-color);
+    width: auto;
+    display: table;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: var(--font-bold);
+    margin-top: 25px;
+    padding: 0 30px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.submit-form:hover {
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+/* select */
+.select-cont {
+    height: 53px;
+    width: 100%;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-toggle {
+    width: 100%;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    height: 100%;
+    border-radius: var(--raduis);
+    border: 1px solid #e4e6eb;
+    padding: 0 27px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-toggle .filter-option {
+    display: flex;
+    align-items: center;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-toggle .filter-option-inner-inner {
+    text-align: right;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+html[lang=en-US] .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-toggle .filter-option-inner-inner {
+    text-align: left;
+}
+
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-toggle:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    border: none;
+    font-size: 11px;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu {
+    z-index: 99991 !important;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #e4e6eb;
+    background-color: #fff;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu .dropdown-menu {
+    border: none;
+    background-color: #fff;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu a {
+    background-color: #fff !important;
+    color: var(--sec-color);
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 0;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu a:hover {
+    color: var(--main-color);
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) .dropdown-menu .active {
+    color: var(--main-color);
+}
+
+/* file */
+.file-val {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 27px;
+    z-index: 9;
+    position: absolute;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+.upload-btn-wrapper {
+    height: 53px;
+    width: 100%;
+    border-radius: var(--raduis);
+    border: 1px solid #e4e6eb;
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: right;
+    padding: 0 27px;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    cursor: pointer !important;
+}
+
+.upload-btn-wrapper .btn {
+    background-color: rgb(242, 242, 242);
+    width: 93px;
+    height: 35px;
+    font-size: 14px;
+    color: #a2a2a2;
+    font-size: 14px;
+    border-radius: var(--raduis);
+    position: absolute;
+    overflow: hidden;
+    display: inline-block;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer !important;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.upload-btn-wrapper input[type=file] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer !important;
+    z-index: 9;
+}
+
+.upload-btn-wrapper input[type=file]:hover {
+    cursor: pointer !important;
+}
+
+.upload-btn-wrapper input[type=file]:hover+.btn,
+.upload-btn-wrapper input[type=file]+.btn:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+}

@@ -40,6 +40,7 @@
     --font-normal: reg;
     --font-bold: bold;
     --font-med: med;
+    --raduis: 30px;
 }
 
 body {

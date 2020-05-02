@@ -113,6 +113,8 @@
 
 html[lang=en-US] .more-anchor:after {
     content: "\f054";
+    margin-left: 5px;
+    margin-right: 0;
 }
 
 .more-anchor:hover {

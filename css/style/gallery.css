@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 25px;
+    border-radius: var(--raduis);
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
     font-size: 20px;

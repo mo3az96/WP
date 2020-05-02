@@ -79,7 +79,7 @@ html[lang=en-US] .result .type {
     padding: 0 15px;
     margin-left: 10px;
     background-color: #ccc;
-    border-radius: 20px;
+    border-radius: var(--raduis);
     font-size: 14px;
     color: var(--text-color);
     font-family: var(--font-bold);
