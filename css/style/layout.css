@@ -1055,6 +1055,7 @@ ol.breadcrumb li a:hover {
 
     .breadcrumb-sec ol.breadcrumb {
         padding: 0;
+        display: none;
     }
 
     .logo {

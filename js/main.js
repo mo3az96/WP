@@ -84,6 +84,19 @@ $(document).ready(function () {
             },
         },
     });
+
+    var postswiper = new Swiper('.post-slider', {
+        effect: 'fade',
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
     ////////////////////////////
     $('.faq-q').click(function () {
         var x = $(this).siblings().prop('scrollHeight') + 12 + "px";
@@ -118,5 +131,15 @@ $(document).ready(function () {
     });
     $(".form-modal").click(function (e) {
         e.stopPropagation()
+    });
+    $('a[data-scroll]').click(function (e) {
+        e.preventDefault();
+        //Set Offset Distance from top to account for fixed nav
+        var target = ('#' + $(this).data('scroll'));
+        var $target = $(target);
+        //Animate the scroll to, include easing lib if you want more fancypants easings
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 1000, 'swing');
     });
 });
