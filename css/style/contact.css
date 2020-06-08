@@ -1,0 +1,128 @@
+.contact-ways {
+    margin-bottom: 100px;
+}
+
+.cb-container {
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    position: relative;
+    margin: 0;
+    padding: 40px 30px;
+    padding-bottom: 0;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    transition: .2s;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 3;
+    margin-bottom: 30px;
+}
+
+.cb-img-area,
+.cb-text-area {
+    display: inline-block;
+    vertical-align: bottom;
+    transition: transform .2s ease-in-out;
+}
+
+.cb-img-area {
+    font-size: 42px;
+    margin-bottom: 25px;
+    margin-right: 0;
+    width: 100%;
+    transition: 0.25s;
+    color: var(--main-color);
+}
+
+.cb-heading {
+    color: var(--sec-color);
+    font-family: var(--font-bold);
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.cb-text-area p {
+    margin-bottom: -35px;
+    opacity: 0;
+    display: block;
+    color: var(--text-color);
+    transition: 0.25s;
+}
+
+.cb-container:hover {
+    box-shadow: 0 44px 98px 0 rgba(0, 0, 0, .12);
+    z-index: 100;
+    border-color: var(--main-color);
+}
+
+.cb-container:hover .cb-text-area,
+.cb-container:hover .cb-img-area {
+    -webkit-transform: translate3d(0, -67px, 0);
+    transform: translate3d(0, -67px, 0);
+}
+
+.cb-container:hover .cb-text-area p {
+    opacity: 1;
+}
+
+.cb-container:hover .cb-img-area {
+    opacity: 0;
+}
+
+.map {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.map::before {
+    padding-bottom: 100%;
+    content: "";
+}
+
+.map #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.map #map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-head {
+    margin-bottom: 20px;
+    color: var(--sec-color);
+    font-family: var(--font-bold);
+    font-size: 30px;
+    line-height: 52px;
+}
+
+.contact-subtext {
+    display: block;
+    color: #999;
+    font-size: 17px;
+    line-height: 27px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .map {
+        margin-bottom: 40px;
+    }
+
+    .contact-head {
+        text-align: center;
+    }
+
+    .contact-subtext {
+        text-align: center;
+    }
+}

@@ -132,14 +132,4 @@ $(document).ready(function () {
     $(".form-modal").click(function (e) {
         e.stopPropagation()
     });
-    $('a[data-scroll]').click(function (e) {
-        e.preventDefault();
-        //Set Offset Distance from top to account for fixed nav
-        var target = ('#' + $(this).data('scroll'));
-        var $target = $(target);
-        //Animate the scroll to, include easing lib if you want more fancypants easings
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 1000, 'swing');
-    });
 });
