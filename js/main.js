@@ -84,6 +84,58 @@ $(document).ready(function () {
             },
         },
     });
+    var aboutpageclientsswiper = new Swiper('.about-page-clients .swiper-container', {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.client-slider .swiper-button-next',
+            prevEl: '.client-slider .swiper-button-prev',
+        },
+        pagination: {
+            el: '.client-slider .swiper-pagination',
+            clickable: true
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+            },
+            500: {
+                slidesPerView: 4,
+            },
+            767: {
+                slidesPerView: 5,
+            },
+            991: {
+                slidesPerView: 6,
+            },
+        },
+    });
+    var teamswiper = new Swiper('.team-slider .swiper-container', {
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.team-slider .swiper-button-next',
+            prevEl: '.team-slider .swiper-button-prev',
+        },
+        pagination: {
+            el: '.team-slider .swiper-pagination',
+            clickable: true
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+            },
+            500: {
+                slidesPerView: 2,
+            },
+            767: {
+                slidesPerView: 3,
+            },
+            991: {
+                slidesPerView: 4,
+            },
+        },
+    });
 
     var postswiper = new Swiper('.post-slider', {
         effect: 'fade',
