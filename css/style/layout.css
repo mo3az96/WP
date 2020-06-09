@@ -1049,6 +1049,10 @@ ol.breadcrumb li a:hover {
 }
 
 @media (max-width: 768px) {
+    .breadcrumb-sec {
+        display: none;
+    }
+
     .breadcrumb-sec .page-head {
         font-size: 30px;
     }
