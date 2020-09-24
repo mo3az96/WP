@@ -416,27 +416,42 @@ p.desc-item:before {
     display: none;
 }
 
-.form-modal-cont::-webkit-scrollbar {
+.modal-pos::-webkit-scrollbar {
     background-color: #fff;
     width: 7px;
     height: 0px;
 }
 
-.form-modal-cont::-webkit-scrollbar-thumb {
+.modal-pos::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
+    border-radius: 7px;
 }
 
-.form-modal-cont {
+.modal-pos {
     scrollbar-width: thin;
     scrollbar-color: var(--main-color) #fff;
 }
 
+.modal-pos {
+    overflow-y: auto;
+    background-color: transparent;
+    width: 600px;
+    position: fixed;
+    top: 30px;
+    bottom: 0;
+    left: 50%;
+    display: none;
+    transform: translateX(-50%);
+    z-index: 99999;
+
+}
+
 .form-modal {
     background-color: #fff;
-    width: 600px;
-    margin: 30px auto;
     padding: 40px;
-    transition: 0.4s;
+    width: 100%;
+    margin: 0 auto;
+    transition: 0.5s;
     transform: translateY(-50px);
 }
 

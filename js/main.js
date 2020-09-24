@@ -175,13 +175,14 @@ $(document).ready(function () {
     ////////////////////////////////////////////////////////
     $(".modal-open").click(function () {
         $(".form-modal-cont").fadeIn(200)
+        $(".modal-pos").fadeIn(200)
         $(".form-modal").addClass("active")
+        $("body").toggleClass("overflow");
     });
     $(".form-modal-cont").click(function () {
         $(".form-modal-cont").fadeOut(400)
+        $(".modal-pos").fadeOut(400)
         $(".form-modal").removeClass("active")
-    });
-    $(".form-modal").click(function (e) {
-        e.stopPropagation()
+        $("body").toggleClass("overflow");
     });
 });
